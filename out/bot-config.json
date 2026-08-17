@@ -1,0 +1,19 @@
+{
+  "_readme": "BotForge — Dashboard থেকে 'bot-config.json ডাউনলোড' করে এই ফাইল রিপ্লেস করুন। type ও config ব্যবহার করুন, code ফিল্ড Cloudflare এ কাজ করে না।",
+  "bots": {
+    "bot_m7c68wsy": {
+      "name": "ইকো বট",
+      "token": "7483272074:AAEyR_xe6c4QS0Eg_UQlfSds0i1FkzUpLhs",
+      "username": "@n8ntestbdbot",
+      "type": "ai-assistant",
+      "status": "active",
+      "config": {
+        "apiKey": "sky_YyLcqlnM.GB7xx6YBRIqA7eRzGEWAPgXHhoa6r4Dg",
+        "apiUrl": "https://inference.poolside.ai/v1/chat/completions",
+        "model": "poolside/laguna-s-2.1",
+        "imageUrl": "https://image.pollinations.ai/prompt/",
+        "systemPrompt": "তুমি একজন সাহায্যকারী AI সহকারী। বাংলা ও ইংরেজি উভয় ভাষায় উত্তর দাও। সংক্ষিপ্ত ও সুন্দর উত্তর দাও।"
+      }
+    }
+  }
+}

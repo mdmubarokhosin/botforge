@@ -1,0 +1,414 @@
+<!DOCTYPE html><html lang="bn"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/fcdafff93183a575-s.p.0ab1x-y9kciz7.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/chunks/05gm1tsxrfvvf.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/1inwntv0b4r-7.js"/><script src="/_next/static/chunks/1l5cgp-n33siq.js" async=""></script><script src="/_next/static/chunks/32f3xqrgd42r4.js" async=""></script><script src="/_next/static/chunks/turbopack-08_rso1c0gahc.js" async=""></script><script src="/_next/static/chunks/344tyobn3y0m9.js" async="" crossorigin=""></script><script src="/_next/static/chunks/0v5nveuqzw23-.js" async="" crossorigin=""></script><script src="/_next/static/chunks/2h7qcsmqb6rns.js" async="" crossorigin=""></script><link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style"/><title>BotForge - টেলিগ্রাম বট হোস্টিং প্ল্যাটফর্ম</title><meta name="description" content="Cloudflare Pages-এ সম্পূর্ণ ফ্রিতে আপনার Telegram বট হোস্ট করুন। কোনো সার্ভার লাগবে না, কোনো ডাটাবেস লাগবে না। আনলিমিটেড বট, আনলিমিটেড রিকোয়েস্ট, চিরকাল ফ্রি।"/><meta name="keywords" content="Telegram Bot,Bot Hosting,Cloudflare Pages,Free Bot Hosting,Serverless,টেলিগ্রাম বট,ফ্রি বট হোস্টিং,বট তৈরি"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 100 100&#x27;&gt;&lt;text y=&#x27;.9em&#x27; font-size=&#x27;90&#x27;&gt;🤖&lt;/text&gt;&lt;/svg&gt;"/><meta name="next-size-adjust" content=""/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><script src="/_next/static/chunks/0cz1d0mv5g_q7.js" noModule=""></script></head><body class="noto_serif_bengali_4cfda81d-module__YYSBCW__variable antialiased bg-background text-foreground"><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><div class="min-h-screen bg-background"><header class="sticky top-0 z-40 bg-card/80 backdrop-blur-lg border-b border-border"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between"><div class="flex items-center gap-3"><button class="lg:hidden p-2 hover:bg-muted rounded-lg"><i class="bi bi-list text-lg"></i></button><a href="/" class="flex items-center gap-2 group"><div class="w-8 h-8 rounded-lg gradient-tg flex items-center justify-center text-white text-sm"><i class="bi bi-robot"></i></div><span class="font-bold text-gradient">BotForge</span></a><span class="hidden sm:inline text-muted-foreground">/</span><span class="hidden sm:inline font-medium">ডকুমেন্টেশন</span></div><a href="/" class="text-sm text-muted-foreground hover:text-[var(--color-telegram)] transition-colors flex items-center gap-1"><i class="bi bi-arrow-left"></i>মূল পেজে ফিরুন</a></div></header><div class="max-w-7xl mx-auto flex"><aside class="hidden lg:block w-64 shrink-0 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto p-4 scrollbar-hide"><nav class="space-y-1"><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 bg-[var(--color-telegram)]/10 text-[var(--color-telegram)] font-medium"><i class="bi bi-info-circle text-base"></i>প্ল্যাটফর্ম ওভারভিউ</button><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 text-muted-foreground hover:text-foreground hover:bg-muted"><i class="bi bi-folder2-open text-base"></i>প্রজেক্ট আর্কিটেকচার ও ফাইল স্ট্রাকচার</button><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 text-muted-foreground hover:text-foreground hover:bg-muted"><i class="bi bi-file-earmark-code text-base"></i>মূল পেজ আর্কিটেকচার (page.tsx)</button><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 text-muted-foreground hover:text-foreground hover:bg-muted"><i class="bi bi-puzzle text-base"></i>UI কম্পোনেন্ট লাইব্রেরি</button><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 text-muted-foreground hover:text-foreground hover:bg-muted"><i class="bi bi-cloud-upload text-base"></i>Cloudflare Pages ডিপ্লয়মেন্ট গাইড</button><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 text-muted-foreground hover:text-foreground hover:bg-muted"><i class="bi bi-robot text-base"></i>বট হোস্টিং সম্পূর্ণ গাইড</button><button class="w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-3 text-muted-foreground hover:text-foreground hover:bg-muted"><i class="bi bi-palette text-base"></i>কাস্টমাইজেশন গাইড</button></nav></aside><main class="flex-1 min-w-0 px-4 sm:px-6 lg:px-10 py-8 pb-24"><div class="mb-12 p-8 rounded-2xl gradient-tg text-white relative overflow-hidden"><div class="absolute inset-0 bg-black/10"></div><div class="relative z-10"><div class="flex items-center gap-2 mb-3"><i class="bi bi-journal-code text-2xl"></i><span class="text-sm font-medium bg-white/20 px-3 py-1 rounded-full">v1.0.0</span></div><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">BotForge ডেভেলপার ডকুমেন্টেশন</h1><p class="text-white/80 text-lg max-w-2xl leading-relaxed">প্ল্যাটফর্মের সম্পূর্ণ আর্কিটেকচার, কোড স্ট্রাকচার, বট হোস্টিং গাইড, এবং AI দিয়ে বট কোড তৈরির নির্দেশনা। এই ডকুমেন্টেশন যেকোনো AI-কে দিলে সে সম্পূর্ণ প্ল্যাটফর্ম বুঝে কাস্টম বট কোড তৈরি করতে পারবে।</p></div></div><section id="doc-overview" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-info-circle"></i></div><h2 class="text-2xl sm:text-3xl font-bold">প্ল্যাটফর্ম ওভারভিউ</h2></div><p class="leading-relaxed mb-3 text-foreground/90">BotForge হলো একটি সম্পূর্ণ ফ্রি ও ওপেন সোর্স Telegram Bot হোস্টিং প্ল্যাটফর্ম। এটি Next.js 16, Tailwind CSS 4, এবং shadcn/ui দিয়ে তৈরি। ব্যবহারকারীরা এই ওয়েবসাইটের মাধ্যমে তাদের Telegram বটের কোড ম্যানেজ করতে পারবেন, প্রস্তুত টেম্পলেট ব্যবহার করতে পারবেন, এবং Cloudflare Pages-এ ফ্রিতে ডিপ্লয় করতে পারবেন।</p><p class="leading-relaxed mb-3 text-foreground/90">কোনো ডাটাবেস সার্ভার লাগবে না। কোনো ক্রেডিট কার্ড লাগবে না। শুধু GitHub অ্যাকাউন্ট আর Cloudflare অ্যাকাউন্ট থাকলেই চলবে। বটের ডেটা ব্রাউজারের localStorage-এ সংরক্ষিত হয়। প্রতিটি বট আলাদা ওয়েবহুক URL পায় যা Cloudflare Pages Function হিসেবে কাজ করে।</p><p class="leading-relaxed mb-3"><strong>টেকনোলজি স্ট্যাক:</strong> Next.js 16.1.3 (Turbopack), React 19, Tailwind CSS 4, shadcn/ui (Radix UI Primitives), Bootstrap Icons CDN, next-themes (ডার্ক মোড), TypeScript 5, class-variance-authority (CVA), tailwind-merge, tw-animate-css.</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">package.json (প্রধান dependencies)</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">{
+  &quot;dependencies&quot;: {
+    &quot;next&quot;: &quot;^16.1.1&quot;,
+    &quot;react&quot;: &quot;^19.0.0&quot;,
+    &quot;react-dom&quot;: &quot;^19.0.0&quot;,
+    &quot;next-themes&quot;: &quot;^0.4.6&quot;,
+    &quot;@radix-ui/react-accordion&quot;: &quot;^1.2.11&quot;,
+    &quot;@radix-ui/react-dialog&quot;: &quot;^1.1.14&quot;,
+    &quot;@radix-ui/react-separator&quot;: &quot;^1.1.7&quot;,
+    &quot;@radix-ui/react-slot&quot;: &quot;^1.2.3&quot;,
+    &quot;@radix-ui/react-tabs&quot;: &quot;^1.1.12&quot;,
+    &quot;@radix-ui/react-toast&quot;: &quot;^1.2.14&quot;,
+    &quot;class-variance-authority&quot;: &quot;^0.7.1&quot;,
+    &quot;clsx&quot;: &quot;^2.1.1&quot;,
+    &quot;tailwind-merge&quot;: &quot;^3.3.1&quot;,
+    &quot;tailwindcss-animate&quot;: &quot;^1.0.7&quot;,
+    &quot;tw-animate-css&quot;: &quot;^1.3.5&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@tailwindcss/postcss&quot;: &quot;^4&quot;,
+    &quot;tailwindcss&quot;: &quot;^4&quot;,
+    &quot;typescript&quot;: &quot;^5&quot;
+  }
+}</code></pre></div></section><section id="doc-architecture" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-folder2-open"></i></div><h2 class="text-2xl sm:text-3xl font-bold">প্রজেক্ট আর্কিটেকচার ও ফাইল স্ট্রাকচার</h2></div><p class="leading-relaxed mb-3 text-foreground/90">প্রজেক্টটি একটি Next.js App Router সিঙ্গেল-পেজ অ্যাপ্লিকেশন। মূল পেজ সম্পূর্ণ ক্লায়েন্ট-সাইড রেন্ডার (&#x27;use client&#x27;)। সব UI কম্পোনেন্ট shadcn/ui প্যাটার্ন অনুসরণ করে — Radix UI Primitives-এর উপর বিল্ড করা। কোনো লুসাইড-রিয়্যাক্ট ব্যবহৃত হয়নি, সব আইকন Bootstrap Icons CDN থেকে নেওয়া।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">ফাইল স্ট্রাকচার</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">botforge/
+├── public/
+│   └── robots.txt                  # SEO robots
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx               # Root layout: Noto Serif Bangla font, ThemeProvider, Toaster
+│   │   ├── page.tsx                 # মূল SPA: সব সেকশন (Navbar, Hero, Features, Templates, Dashboard, FAQ, Footer)
+│   │   ├── globals.css              # Tailwind CSS 4 theme, CSS variables, dark mode, animations
+│   │   └── docs/
+│   │       └── page.tsx             # এই ডকুমেন্টেশন পেজ
+│   ├── components/
+│   │   ├── theme-provider.tsx       # next-themes wrapper
+│   │   └── ui/                      # shadcn/ui কম্পোনেন্ট (Radix UI based)
+│   │       ├── accordion.tsx         # FAQ সেকশনে ব্যবৃত্ত
+│   │       ├── badge.tsx            # স্ট্যাটাস ব্যাজ, ক্যাটাগরি ট্যাগ
+│   │       ├── button.tsx           # CVA variant button
+│   │       ├── card.tsx             # কার্ড লেআউট
+│   │       ├── dialog.tsx           # বট তৈরি/এডিট মোডাল
+│   │       ├── input.tsx            # ফর্ম ইনপুট
+│   │       ├── separator.tsx        # ডিভাইডার
+│   │       ├── tabs.tsx             # ড্যাশবোর্ড ট্যাব
+│   │       ├── textarea.tsx         # কোড এডিটর
+│   │       ├── toast.tsx            # Toast notification primitives
+│   │       └── toaster.tsx          # Toast renderer
+│   ├── hooks/
+│   │   └── use-toast.ts            # Toast state management hook
+│   └── lib/
+│       └── utils.ts                 # cn() utility (clsx + tailwind-merge)
+├── next.config.ts                   # output: &quot;export&quot; for Cloudflare Pages
+├── tsconfig.json                    # TypeScript config
+├── postcss.config.mjs               # PostCSS with @tailwindcss/postcss
+├── components.json                  # shadcn/ui config
+└── package.json</code></pre></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">1</span>লেআউট সিস্টেম (layout.tsx)</h3><p class="leading-relaxed mb-3 text-foreground/90">Root Layout হলো সমগ্র অ্যাপের মেরুদণ্ড। এটি তিনটি গুরুত্বপূর্ণ কাজ করে: (১) Noto Serif Bangla Google Font লোড করে CSS variable --font-bangla হিসেবে সেট করে, (২) ThemeProvider দিয়ে ডার্ক/লাইট মোড ম্যানেজ করে, (৩) Toaster কম্পোনেন্ট রেন্ডার করে। Bootstrap Icons CDN link head-এ যুক্ত আছে। html lang=&quot;bn&quot; সেট করা আছে। suppressHydrationWarning দেওয়া আছে next-themes-এর জন্য।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">src/app/layout.tsx</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">import type { Metadata } from &quot;next&quot;;
+import { Noto_Serif_Bengali } from &quot;next/font/google&quot;;
+import &quot;./globals.css&quot;;
+import { Toaster } from &quot;@/components/ui/toaster&quot;;
+import { ThemeProvider } from &quot;@/components/theme-provider&quot;;
+
+const notoSerifBengali = Noto_Serif_Bengali({
+  variable: &quot;--font-bangla&quot;,
+  subsets: [&quot;bengali&quot;],
+  weight: [&quot;400&quot;, &quot;500&quot;, &quot;600&quot;, &quot;700&quot;, &quot;800&quot;],
+  display: &quot;swap&quot;,
+});
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    &lt;html lang=&quot;bn&quot; suppressHydrationWarning&gt;
+      &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot; /&gt;
+      &lt;/head&gt;
+      &lt;body className={`${notoSerifBengali.variable} antialiased bg-background text-foreground`}&gt;
+        &lt;ThemeProvider attribute=&quot;class&quot; defaultTheme=&quot;system&quot; enableSystem disableTransitionOnChange&gt;
+          {children}
+        &lt;/ThemeProvider&gt;
+        &lt;Toaster /&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  );
+}</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">2</span>থিম সিস্টেম (globals.css)</h3><p class="leading-relaxed mb-3 text-foreground/90">CSS-এ দুটি থিম ডিফাইন করা আছে: :root (লাইট) এবং .dark (ডার্ক)। প্রতিটি থিমে --background, --foreground, --card, --muted, --border, --primary, --ring, --input, --accent, --destructive সহ ১৫+ CSS variable আছে। Tailwind CSS 4-এর @theme inline ব্লকে এই variable গুলোকে Tailwind color token হিসেবে রেজিস্টার করা হয়েছে। @custom-variant dark দিয়ে .dark class-based dark mode কাজ করে।</p><p class="leading-relaxed mb-3 text-foreground/90">কাস্টম utility class গুলো: .gradient-tg (Telegram blue gradient), .text-gradient (gradient text), .hover-lift (hover animation), .glass-card, .animate-float, .animate-pulse-slow, .scrollbar-hide। দুটি keyframe animation আছে: float (6s ease-in-out) এবং pulse-slow (3s ease-in-out)।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">src/app/globals.css (থিম variables)</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">@import &quot;tailwindcss&quot;;
+@import &quot;tw-animate-css&quot;;
+@custom-variant dark (&amp;:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-bangla), &#x27;Noto Serif Bengali&#x27;, serif;
+  --color-telegram: #0088cc;
+  --color-telegram-light: #29b6f6;
+  --color-telegram-dark: #006699;
+  --color-tg-blue: #2AABEE;
+  /* ... সব color token ... */
+}
+
+:root {
+  --background: #f8fafb;
+  --foreground: #1a1a2e;
+  --card: #ffffff;
+  --primary: #0088cc;
+  --muted: #f0f4f8;
+  --muted-foreground: #4a5568;
+  --border: #e2e8f0;
+  /* ... */
+}
+
+.dark {
+  --background: #0a0e1a;
+  --foreground: #e2e8f0;
+  --card: #141925;
+  --primary: #2AABEE;
+  --muted: #1a1f2e;
+  --muted-foreground: #7b8fa3;
+  --border: #1e2a3a;
+  /* ... */
+}</code></pre></div></div></section><section id="doc-main-page" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-file-earmark-code"></i></div><h2 class="text-2xl sm:text-3xl font-bold">মূল পেজ আর্কিটেকচার (page.tsx)</h2></div><p class="leading-relaxed mb-3 text-foreground/90">src/app/page.tsx হলো সমগ্র অ্যাপ্লিকেশনের মূল ফাইল। এটি &#x27;use client&#x27; ডিরেক্টিভ সহ একটি সিঙ্গেল-পেজ অ্যাপ্লিকেশন যেখানে সব সেকশন একটি ফাইলে ডিফাইন করা আছে। পেজটি নিচের সেকশনগুলো নিয়ে গঠিত:</p><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">1</span>ডেটা টাইপ ও টেম্পলেট সিস্টেম</h3><p class="leading-relaxed mb-3 text-foreground/90">Bot interface ডিফাইন করা আছে যেখানে id, name, token, username, status, code, templateId, createdAt, webhookUrl, lastPing, messagesReceived, messagesSent প্রপার্টি আছে। BotTemplate interface-এ id, name, icon (Bootstrap Icons class), description, category, code আছে।</p><p class="leading-relaxed mb-3 text-foreground/90">BOT_TEMPLATES array-তে ৬টি প্রস্তুত টেম্পলেট আছে। প্রতিটি টেম্পলেটের code হলো একটি JavaScript module.exports ফাংশন যা (update, api) দুটি প্যারামিটার নেয়। update হলো Telegram Update অবজেক্ট, api হলো হেল্পার অবজেক্ট (sendMessage, sendPhoto, sendDocument ইত্যাদি মেথড সহ)।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">Bot ও BotTemplate Interface</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">interface Bot {
+  id: string;
+  name: string;
+  token: string;
+  username: string;
+  status: &#x27;active&#x27; | &#x27;inactive&#x27; | &#x27;error&#x27;;
+  code: string;           // JavaScript handler code
+  templateId: string;     // কোন টেম্পলেট থেকে তৈরি
+  createdAt: string;
+  webhookUrl: string;     // Cloudflare Pages URL
+  lastPing: string;
+  messagesReceived: number;
+  messagesSent: number;
+}
+
+interface BotTemplate {
+  id: string;
+  name: string;
+  icon: string;          // Bootstrap Icons class যেমন &#x27;bi-robot&#x27;
+  description: string;
+  category: string;      // &#x27;বেসিক&#x27; বা &#x27;ব্যবসা&#x27;
+  code: string;           // module.exports = async function(update, api) { ... }
+}</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">2</span>বট হ্যান্ডলার কোড ফরম্যাট</h3><p class="leading-relaxed mb-3 text-foreground/90">প্রতিটি বটের কোড নিচের ফরম্যাটে লিখতে হবে। এটি একটি CommonJS module যা একটি async ফাংশন export করে। ফাংশনটি দুটি প্যারামিটার পায়: update (Telegram Update object) এবং api (হেল্পার methods সহ অবজেক্ট)।</p><p class="leading-relaxed mb-3 text-foreground/90">api অবজেক্টের মেথডসমূহ: api.sendMessage(chatId, text, options), api.sendPhoto(chatId, fileId, options), api.sendDocument(chatId, fileId, options)। options-এ { parse_mode: &#x27;Markdown&#x27; } পাস করা যায়।</p><p class="leading-relaxed mb-3 text-foreground/90">update.message.text থেকে ইউজারের পাঠানো টেক্সট পাওয়া যায়। update.message.chat.id থেকে chat ID পাওয়া যায়। update.message.from.first_name থেকে ইউজারের নাম পাওয়া যায়। update.message.photo থেকে ছবি পাওয়া যায়। update.message.document থেকে ফাইল পাওয়া যায়।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">বট হ্যান্ডলার ফরম্যাট (handler.js)</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">// সব বট কোড এই ফরম্যাটে লিখতে হবে
+module.exports = async function(update, api) {
+  const text = update.message?.text || &#x27;&#x27;;
+  const chatId = update.message?.chat?.id;
+  const firstName = update.message?.from?.first_name || &#x27;বন্ধু&#x27;;
+
+  // /start কমান্ড হ্যান্ডেল
+  if (text === &#x27;/start&#x27;) {
+    await api.sendMessage(chatId, &#x27;স্বাগতম, &#x27; + firstName + &#x27;!&#x27;);
+    return;
+  }
+
+  // /help কমান্ড
+  if (text === &#x27;/help&#x27;) {
+    await api.sendMessage(chatId,
+      &#x27;কমান্ড সমূহ:
+/start - শুরু করুন
+/help - সাহায্য
+/ping - পিং&#x27;,
+      { parse_mode: &#x27;Markdown&#x27; }
+    );
+    return;
+  }
+
+  // অন্য যেকোনো মেসেজে রিপ্লাই
+  await api.sendMessage(chatId, &#x27;আপনি লিখেছেন: &#x27; + text);
+};
+
+// ──── Update Object Structure ────
+// update.message = {
+//   message_id: number,
+//   from: { id: number, first_name: string, username?: string },
+//   chat: { id: number, type: &#x27;private&#x27;|&#x27;group&#x27;|&#x27;supergroup&#x27; },
+//   text?: string,
+//   photo?: Array&lt;{ file_id: string, file_unique_id: string }&gt;,
+//   document?: { file_id: string, file_name?: string },
+//   date: number
+// }</code></pre></div><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">api অবজেক্টের মেথডসমূহ</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">// api অবজেক্ট যা হ্যান্ডলার ফাংশনে পাস হয়
+interface BotAPI {
+  sendMessage(
+    chatId: number | string,
+    text: string,
+    options?: { parse_mode?: &#x27;Markdown&#x27; | &#x27;HTML&#x27; }
+  ): Promise&lt;any&gt;;
+
+  sendPhoto(
+    chatId: number | string,
+    fileId: string,
+    options?: { caption?: string }
+  ): Promise&lt;any&gt;;
+
+  sendDocument(
+    chatId: number | string,
+    fileId: string,
+    options?: { caption?: string }
+  ): Promise&lt;any&gt;;
+}</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">3</span>ড্যাশবোর্ড ও স্টেট ম্যানেজমেন্ট</h3><p class="leading-relaxed mb-3 text-foreground/90">DashboardSection কম্পোনেন্ট সব বট CRUD অপারেশন হ্যান্ডেল করে। বটের ডেটা localStorage-এ &#x27;botforge_bots&#x27; key-তে JSON আকারে সেভ থাকে। getStoredBots() দিয়ে ডেটা লোড হয়, saveBots() দিয়ে সেভ হয়।</p><p class="leading-relaxed mb-3 text-foreground/90">ড্যাশবোর্ডে দুটি ট্যাব আছে: &quot;বট লিস্ট&quot; (সব বটের কার্ড ভিউ) এবং &quot;কোড এডিটর&quot; (ইন-ব্রাউজার কোড এডিটিং)। নতুন বট তৈরির জন্য Dialog মডাল আছে যেখানে টেম্পলেট সিলেক্টর, নাম, টোকেন, ইউজারনেম, এবং কোড এডিটর আছে।</p><p class="leading-relaxed mb-3 text-foreground/90">Home কম্পোনেন্টে pendingTemplate state আছে যা TemplatesSection থেকে ড্যাশবোর্ডে টেম্পলেট অ্যাপ্লাই করার জন্য ব্যবহৃত হয়। useEffect দিয়ে pendingTemplate পরিবর্তন শোনা হয় এবন ডায়ালগ অটো-ওপেন হয়। IntersectionObserver দিয়ে active nav section ট্র্যাক করা হয়।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">localStorage CRUD ফাংশন</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">function getStoredBots(): Bot[] {
+  if (typeof window === &#x27;undefined&#x27;) return [];
+  try {
+    const raw = localStorage.getItem(&#x27;botforge_bots&#x27;);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveBots(bots: Bot[]) {
+  localStorage.setItem(&#x27;botforge_bots&#x27;, JSON.stringify(bots));
+}
+
+// বট তৈরির সময় localStorage-ে সেভ হয়
+const newBot: Bot = {
+  id: &#x27;bot_&#x27; + Math.random().toString(36).substring(2, 10),
+  name: formName,
+  token: formToken,
+  username: formUsername || &#x27;@&#x27; + formName.toLowerCase().replace(/s+/g, &#x27;_&#x27;),
+  status: &#x27;active&#x27;,
+  code: formCode,
+  templateId: selectedTemplateId,
+  createdAt: new Date().toISOString(),
+  webhookUrl: &#x27;https://your-project.pages.dev/webhook/&#x27; + generateId(),
+  lastPing: new Date().toISOString(),
+  messagesReceived: 0,
+  messagesSent: 0,
+};
+saveBots([newBot, ...existingBots]);</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">4</span>টেম্পলেট লিস্ট</h3><p class="leading-relaxed mb-3 text-foreground/90">৬টি প্রস্তুত টেম্পলেট আছে দুটি ক্যাটাগরিতে: বেসিক (৩টি) এবং ব্যবসা (৩টি)। প্রতিটি টেম্পলেটে সম্পূর্ণ কার্যকর বট কোড আছে যা সরাসরি ডিপ্লয় করা যায়। টেম্পলেট কোডে বাংলা ভাষায় মেসেজ ও কমান্ড লেখা আছে।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">৬টি টেম্পলেট</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">// ১. blank (খালি বট) - বেসিক
+// সম্পূর্ণ খালি টেম্পলেট, /start শুধু
+
+// ২. welcome (ওয়েলকাম বট) - বেসিক
+// /start, /help, /about, /ping কমান্ড
+// ইউজার গ্রিটিং, রেসপন্স টাইম টেস্ট
+
+// ৩. echo (ইকো বট) - বেসিক
+// টেক্সট, ছবি, ফাইল ইকো (ফিরিয়ে পাঠায়)
+// টেস্টিং এর জন্য আদর্শ
+
+// ৪. faq (FAQ বট) - ব্যবসা
+// প্রি-ডিফাইন্ড প্রশ্ন-উত্তর, নম্বর/কীওয়ার্ড ম্যাচিং
+// নতুন কর্মী, কাস্টমার সাপোর্ট
+
+// ৫. poll (পোল বট) - ব্যবসা
+// /newpoll দিয়ে ইনলাইন পোল তৈরি
+// গ্রুপ/চ্যানেলে ভোট সংগ্রহ
+
+// ৬. notification (নোটিফিকেশন বট) - ব্যবসা
+// /notify ও /announce কমান্ড
+// টীম/কমিউনিটি ম্যানেজমেন্ট</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">5</span>ডার্ক মোড টগল</h3><p class="leading-relaxed mb-3 text-foreground/90">next-themes লাইব্রেরি ব্যবহার করে ডার্ক মোড ইম্প্লিমেন্ট করা হয়েছে। ThemeProvider layout.tsx-এ attribute=&quot;class&quot; দিয়ে র‍্যাপ করা, যার মানে html element-এ .dark class যোগ/সরানো হয়। DarkModeToggle কম্পোনেন্টে useTheme() hook ব্যবহৃত হয়। mounted state দিয়ে hydration mismatch প্রতিরোধ করা হয়েছে।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">DarkModeToggle কম্পোনেন্ট</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">function DarkModeToggle() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() =&gt; { setMounted(true); }, []);
+  if (!mounted) return &lt;div className=&quot;w-9 h-9&quot; /&gt;;
+  return (
+    &lt;button
+      onClick={() =&gt; setTheme(theme === &#x27;dark&#x27; ? &#x27;light&#x27; : &#x27;dark&#x27;)}
+      className=&quot;w-9 h-9 rounded-xl flex items-center justify-center
+        border border-border hover:bg-muted transition-all duration-300&quot;
+    &gt;
+      &lt;i className={`bi ${
+        theme === &#x27;dark&#x27; ? &#x27;bi-sun-fill text-amber-400&#x27; : &#x27;bi-moon-fill text-indigo-400&#x27;
+      } text-lg`} /&gt;
+    &lt;/button&gt;
+  );
+}</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">6</span>নেভিগেশন ও স্ক্রল সিস্টেম</h3><p class="leading-relaxed mb-3 text-foreground/90">Navbar ফিক্সড টপে থাকে (z-50, backdrop-blur)। IntersectionObserver দিয়ে কোন সেকশন ভিউপোর্টে আছে তা ট্র্যাক করে active nav link হাইলাইট করে। scrollToSection() ফাংশন getBoundingClientRect() ব্যবহার করে element-এর অবস্থান বের করে, 64px navbar height বাদ দিয়ে smooth scroll করে। মোবাইলে হ্যামবার্গার মেনু আছে।</p></div></section><section id="doc-ui-components" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-puzzle"></i></div><h2 class="text-2xl sm:text-3xl font-bold">UI কম্পোনেন্ট লাইব্রেরি</h2></div><p class="leading-relaxed mb-3 text-foreground/90">সব UI কম্পোনেন্ট shadcn/ui প্যাটার্ন অনুসরণ করে। প্রতিটি কম্পোনেন্ট নিচের প্যাটার্নে লেখা: Radix UI Primitive ইম্পোর্ট, cn() utility দিয়ে className merge, data-slot attribute সহ semantic HTML, forwardRef প্যাটার্ন (যেখানে প্রযোজ্য)। কোনো লুসাইড-রিয়্যাক্ট আইকন ব্যবহৃত হয়নি — সব আইকন ইনলাইন SVG বা Bootstrap Icons CDN থেকে।</p><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">1</span>Button (button.tsx)</h3><p class="leading-relaxed mb-3 text-foreground/90">class-variance-authority (CVA) দিয়ে ৫টি variant (default, destructive, outline, secondary, ghost, link) এবং ৪টি size (default, sm, lg, icon) ডিফাইন করা আছে। Radix Slot ব্যবহার করে asChild prop সাপোর্ট করে।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">2</span>Dialog (dialog.tsx)</h3><p class="leading-relaxed mb-3 text-foreground/90">@radix-ui/react-dialog ভিত্তিক। DialogContent-এ Portal + Overlay + Content প্যাটার্ন। অ্যানিমেশন: zoom-in/out, fade-in/out (data-[state=open]/data-[state=closed])। showCloseButton prop দিয়ে close button লুকানো/দেখানো যায়। XIcon ইনলাইন SVG দিয়ে তৈরি।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">3</span>Accordion (accordion.tsx)</h3><p class="leading-relaxed mb-3 text-foreground/90">@radix-ui/react-accordion ভিত্তিক। ChevronDownIcon ইনলাইন SVG। AccordionTrigger-এ [&amp;[data-state=open]&gt;svg]:rotate-180 দিয়ে চেভরন রোটেশন। অ্যানিমেশন: accordion-up, accordion-down (tw-animate-css থেকে)।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">4</span>Toast System (toast.tsx + toaster.tsx + use-toast.ts)</h3><p class="leading-relaxed mb-3 text-foreground/90">@radix-ui/react-toast ভিত্তিক সম্পূর্ণ toast notification সিস্টেম। use-toast.ts-এ reducer pattern দিয়ে state ম্যানেজ হয়। TOAST_LIMIT = 1 (একসাথে একটি toast)। toast() ফাংশন কল করলে dispatch হয়, listeners-এর মাধ্যমে সব useToast() হুক আপডেট হয়। variant: &#x27;default&#x27; | &#x27;destructive&#x27; সাপোর্ট।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">5</span>অন্যান্য কম্পোনেন্ট</h3><p class="leading-relaxed mb-3 text-foreground/90">Card (card.tsx): Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter — সব section-এ ব্যবহৃত। Input (input.tsx): focus-visible ring সহ styled input। Textarea (textarea.tsx): resize-y সহ textarea। Badge (badge.tsx): variant (default, secondary, outline, destructive) সহ ছোট ব্যাজ। Tabs (tabs.tsx): @radix-ui/react-tabs ভিত্তিক, ড্যাশবোর্ডে ব্যবহৃত। Separator (separator.tsx): @radix-ui/react-separator ভিত্তিক ডিভাইডার।</p></div></section><section id="doc-deployment" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-cloud-upload"></i></div><h2 class="text-2xl sm:text-3xl font-bold">Cloudflare Pages ডিপ্লয়মেন্ট গাইড</h2></div><p class="leading-relaxed mb-3 text-foreground/90">BotForge Cloudflare Pages-এ সম্পূর্ণ ফ্রিতে হোস্ট করা যায়। নিচে ধাপে ধাপে দেওয়া হলো কিভাবে ডিপ্লয় করতে হবে। আপনার একটি GitHub অ্যাকাউন্ট এবং একটি Cloudflare অ্যাকাউন্ট লাগবে (দুটিই ফ্রি)।</p><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">1</span>ধাপ ১: GitHub রিপো তৈরি</h3><p class="leading-relaxed mb-3 text-foreground/90">GitHub-এ একটি নতুন repository তৈরি করুন (Private বা Public, যেকোনোটা)। এই প্রোডাকশন ZIP ফাইল আনজিপ করে সব ফাইল রিপোতে কমিট ও পুশ করুন।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">2</span>ধাপ ২: Cloudflare Pages তে কানেক্ট</h3><p class="leading-relaxed mb-3 text-foreground/90">Cloudflare Dashboard &gt; Workers &amp; Pages &gt; Create &gt; Pages &gt; Connect to Git-এ যান। আপনার GitHub রিপো সিলেক্ট করুন।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">3</span>ধাপ ৩: বিল্ড সেটিংস (সবচেয়ে গুরুত্বপূর্ণ!)</h3><p class="leading-relaxed mb-3 text-foreground/90">এই সেটিংস ভুল হলে সাইট 404 দেবে! নিচের মতো সেট করুন:</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">Cloudflare Pages Build Settings</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">Framework preset:    None
+Build command:       npm run build
+Build output dir:    out
+Root directory:       (খালি রাখুন)
+Node.js version:      18 বা 20
+
+⚠️ সতর্কতা:
+- Build output dir অবশ্যই &quot;out&quot; হতে হবে (&quot;.next&quot; নয়!)
+- Framework preset &quot;None&quot; রাখুন (&quot;Next.js&quot; সিলেক্ট করবেন না)
+- next.config.ts-এ output: &quot;export&quot; আছে কিনা নিশ্চিত করুন</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">4</span>ধাপ ৪: ডিপ্লয় হওয়ার অপেক্ষা</h3><p class="leading-relaxed mb-3 text-foreground/90">Save and Deploy ক্লিক করুন। ১-২ মিনিটে বিল্ড সম্পন্ন হবে। সফল হলে আপনি একটি .pages.dev সাবডোমেইন পাবেন। কাস্টম ডোমেইনও কানেক্ট করতে পারবেন Custom Domains ট্যাব থেকে।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">5</span>সমস্যা সমাধান (Troubleshooting)</h3><p class="leading-relaxed mb-3 text-foreground/90">সাইট 404 দেচ্ছে: Build output directory &quot;out&quot; সেট আছে কিনা চেক করুন। next.config.ts-এ output: &quot;export&quot; আছে কিনা যাচাই করুন। বিল্ড লগে সব রুট &quot;Static&quot; হিসেবে দেখাচ্ছে কিনা চেক করুন।</p><p class="leading-relaxed mb-3 text-foreground/90">বিল্ড ফেইল হচ্ছে: npm install সফল হচ্ছে কিনা দেখুন। package-lock.json কমিট করেছেন কিনা নিশ্চিত করুন। Node.js version 18+ ব্যবহার করুন।</p><p class="leading-relaxed mb-3 text-foreground/90">ফন্ট লোড হচ্ছে না: Noto Serif Bangla Google Font next/font/google থেকে লোড হয়। ইন্টারনেট কানেকশন চেক করুন।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">next.config.ts (সঠিক কনফিগ)</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">import type { NextConfig } from &quot;next&quot;;
+
+const nextConfig: NextConfig = {
+  output: &quot;export&quot;,           // ← এটি অবশ্যই লাগবে!
+  typescript: {
+    ignoreBuildErrors: true,  // টাইপ এরর ইগনোর
+  },
+  reactStrictMode: false,
+  images: {
+    unoptimized: true,        // static export-এ লাগবে
+  },
+};
+
+export default nextConfig;</code></pre></div></div></section><section id="doc-bot-hosting" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-robot"></i></div><h2 class="text-2xl sm:text-3xl font-bold">বট হোস্টিং সম্পূর্ণ গাইড</h2></div><p class="leading-relaxed mb-3 text-foreground/90">BotForge-এ বট হোস্ট করার সম্পূর্ণ প্রক্রিয়া নিচে দেওয়া হলো। একটি AI যদি এই ডকুমেন্টেশন পড়ে, তাহলে সে সম্পূর্ণ বট কোড তৈরি করতে পারবে এবং হোস্ট করতে পারবে।</p><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">1</span>ধাপ ১: Telegram Bot Token নিন</h3><p class="leading-relaxed mb-3 text-foreground/90">Telegram-ে @BotFather বটে মেসেজ পাঠান। /newbot কমান্ড দিন, বটের নাম দিন, ইউজারনেম দিন। BotFather একটি Token দেবে যেমন: 123456789:ABCdefGHIjklMNOpqrsTUVwxyz। এই Token নিরাপদে রাখুন, কাউকে শেয়ার করবেন না।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">2</span>ধাপ ২: BotForge ড্যাশবোর্ডে বট তৈরি করুন</h3><p class="leading-relaxed mb-3 text-foreground/90">ওয়েবসাইটের ড্যাশবোর্ড সেকশনে যান। &quot;নতুন বট&quot; বাটনে ক্লিক করুন। টেম্পলেট বেছে নিন বা খালি থেকে শুরু করুন। বটের নাম, Bot Token, ইউজারনেম দিন। কোড এডিটরে বটের লজিক লিখুন (module.exports ফরম্যাটে)। সেভ করুন।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">নতুন বট তৈরির ফ্লো</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">১. BotForge ওয়েবসাইট ওপেন করুন
+২. ড্যাশবোর্ড সেকশনে যান (নেভিগেশন বার থেকে)
+৩. &quot;নতুন বট&quot; বাটনে ক্লিক করুন
+৪. ডায়ালগে টেম্পলেট বেছে নিন:
+   - খালি বট (নিজে কোড লিখুন)
+   - ওয়েলকাম বট (/start, /help, /about, /ping)
+   - ইকো বট (মেসেজ, ছবি, ফাইল ইকো)
+   - FAQ বট (প্রশ্ন-উত্তর)
+   - পোল বট (ভোট সংগ্রহ)
+   - নোটিফিকেশন বট (ঘোষণা)
+৫. বটের নাম দিন (যেমন: MyHelperBot)
+৬. BotFather থেকে প্রাপ্ত Token পেস্ট করুন
+৭. বট ইউজারনেম দিন (যেমন: @my_helper_bot)
+৮. কোড কাস্টমাইজ করুন (ইচ্ছামতো)
+৯. &quot;তৈরি&quot; বাটনে ক্লিক করুন
+১০. বট এখন ড্যাশবোর্ডে দেখা যাবে</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">3</span>ধাপ ৩: Webhook সেটআপ</h3><p class="leading-relaxed mb-3 text-foreground/90">বট তৈরির পর প্রতিটি বট একটি webhook URL পায় (যেমন: https://your-project.pages.dev/webhook/bot_abc123)। এই URL Telegram-এ রেজিস্টার করতে হবে। ব্রাউজারে বা curl দিয়ে নিচের API কল করুন:</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">Webhook সেট করার API কল</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300"># Webhook সেট করুন
+ curl -X POST &quot;https://api.telegram.org/bot&lt;TOKEN&gt;/setWebhook&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;url&quot;: &quot;https://your-project.pages.dev/webhook/bot_abc123&quot;}&#x27;
+
+# Webhook স্ট্যাটাস চেক করুন
+curl &quot;https://api.telegram.org/bot&lt;TOKEN&gt;/getWebhookInfo&quot;
+
+# Webhook মুছে ফেলুন (লাগবে না হলে)
+curl &quot;https://api.telegram.org/bot&lt;TOKEN&gt;/deleteWebhook&quot;</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">4</span>ধাপ ৪: বট টেস্টিং</h3><p class="leading-relaxed mb-3 text-foreground/90">Telegram অ্যাপে আপনার বট সার্চ করুন, বটের ইউজারনেম দিয়ে। /start কমান্ড পাঠান। বট রিপ্লাই দিলে সব ঠিক আছে! ড্যাশবোর্ড থেকে বটের স্ট্যাটাস দেখুন, কোড এডিট করুন, আবার ডিপ্লয় করুন।</p></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">5</span>AI দিয়ে বট কোড তৈরির নির্দেশনা</h3><p class="leading-relaxed mb-3 text-foreground/90">যেকোনো AI-কে (যেমন ChatGPT, Claude, Gemini) নিচের প্রম্পট দিয়ে বট কোড তৈরি করতে বলুন:</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">AI প্রম্পট টেমপ্লেট</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">তুমি একজন Telegram Bot ডেভেলপার। BotForge প্ল্যাটফর্মের জন্য একটি বট হ্যান্ডলার লিখো।
+
+বট হ্যান্ডলার ফরম্যাট:
+module.exports = async function(update, api) { ... }
+
+Parameters:
+- update.message.text (string): ইউজারের পাঠানো টেক্সট
+- update.message.chat.id (number): চ্যাট আইডি
+- update.message.from.first_name (string): ইউজারের নাম
+- update.message.photo (array | undefined): ছবি
+- update.message.document (object | undefined): ফাইল
+
+api methods:
+- api.sendMessage(chatId, text, { parse_mode: &#x27;Markdown&#x27; })
+- api.sendPhoto(chatId, fileId, { caption: &#x27;&#x27; })
+- api.sendDocument(chatId, fileId, { caption: &#x27;&#x27; })
+
+[এখানে তোমার বটের বিবরণ দাও]
+বটের কাজ: ...
+কমান্ডসমূহ: ...
+বিশেষ ফিচার: ...
+
+মেসেজ বাংলায় হবে।</code></pre></div><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">উদাহরণ: ক্যালকুলেটর বট (AI তৈরি)</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">// AI এই কোড তৈরি করতে পারবে
+module.exports = async function(update, api) {
+  const text = (update.message?.text || &#x27;&#x27;).trim();
+  const chatId = update.message?.chat?.id;
+
+  if (text === &#x27;/start&#x27;) {
+    await api.sendMessage(chatId,
+      &#x27;ক্যালকুলেটর বট! 
+
+&#x27; +
+      &#x27;ব্যবহার: /calc 25 + 30 * 2
+&#x27; +
+      &#x27;অপারেটর: + - * / 
+
+&#x27; +
+      &#x27;/help - সাহায্য দেখুন&#x27;
+    );
+    return;
+  }
+
+  if (text.startsWith(&#x27;/calc &#x27;)) {
+    const expr = text.substring(6);
+    try {
+      // শুধুমাত্র সংখ্যা ও অপারেটর অনুমোদন
+      if (/^[0-9+-*/().s]+$/.test(expr)) {
+        const result = Function(&#x27;&quot;use strict&quot;; return (&#x27; + expr + &#x27;)&#x27;)();
+        await api.sendMessage(chatId,
+          &#x27; গণনা: &#x27; + expr + &#x27;
+&#x27; +
+          &#x27; = &#x27; + result
+        );
+      } else {
+        await api.sendMessage(chatId, &#x27;শুধুমাত্র সংখ্যা ও + - * / ব্যবহার করুন।&#x27;);
+      }
+    } catch {
+      await api.sendMessage(chatId, &#x27;গণনায় ত্রুটি! সঠিক ফরম্যাট ব্যবহার করুন।&#x27;);
+    }
+    return;
+  }
+
+  await api.sendMessage(chatId, &#x27;কমান্ড চিনতে পারছি না। /help দেখুন।&#x27;);
+};</code></pre></div></div></section><section id="doc-customization" class="mb-14 scroll-mt-20"><div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl gradient-tg flex items-center justify-center text-white text-lg shrink-0"><i class="bi bi-palette"></i></div><h2 class="text-2xl sm:text-3xl font-bold">কাস্টমাইজেশন গাইড</h2></div><p class="leading-relaxed mb-3 text-foreground/90">BotForge সহজে কাস্টমাইজ করা যায়। রঙ, ফন্ট, টেম্পলেট সব পরিবর্তন করা সম্ভব।</p><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">1</span>রঙ পরিবর্তন</h3><p class="leading-relaxed mb-3 text-foreground/90">globals.css-এ :root এবং .dark সেকশনে CSS variables পরিবর্তন করুন। --color-telegram, --color-telegram-light, --color-telegram-dark, --color-tg-blue পরিবর্তন করলে সাইটের মূল রঙ বদলাবে। .gradient-tg utility class-এ gradient colors পরিবর্তন করুন।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">রঙ কাস্টমাইজেশন উদাহরণ</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">/* globals.css - সবুজ থিম */
+:root {
+  --background: #f0fdf4;
+  --foreground: #14532d;
+  --primary: #16a34a;
+  --card: #ffffff;
+  --muted: #dcfce7;
+  --border: #bbf7d0;
+}
+
+/* @theme inline-এ */
+--color-telegram: #16a34a;
+--color-telegram-light: #4ade80;
+--color-telegram-dark: #15803d;
+--color-tg-blue: #22c55e;
+
+/* .gradient-tg utility-এ */
+.gradient-tg {
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
+}</code></pre></div></div><div class="mt-8 ml-0 sm:ml-4"><h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-[var(--color-telegram)]/10 flex items-center justify-center text-xs text-[var(--color-telegram)] font-bold">2</span>নতুন টেম্পলেট যোগ করা</h3><p class="leading-relaxed mb-3 text-foreground/90">page.tsx-এ BOT_TEMPLATES array-তে নতুন অবজেক্ট যোগ করুন। id ইউনিক হতে হবে, icon হবে Bootstrap Icons class, category হবে &#x27;বেসিক&#x27; বা &#x27;ব্যবসা&#x27; (বা নতুন ক্যাটাগরি), code হবে module.exports ফরম্যাটের JavaScript কোড।</p><div class="rounded-xl overflow-hidden border border-border bg-[#0d1117] my-4"><div class="flex items-center justify-between px-4 py-2 bg-[#161b22] border-b border-border"><div class="flex items-center gap-2"><div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80"></span><span class="w-3 h-3 rounded-full bg-green-500/80"></span></div><span class="text-xs text-muted-foreground font-mono ml-2">নতুন টেম্পলেট যোগ করার উদাহরণ</span></div><button class="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"><i class="bi bi-clipboard"></i>কপি</button></div><pre class="p-4 overflow-x-auto text-sm font-mono leading-relaxed scrollbar-hide"><code class="text-gray-300">// BOT_TEMPLATES array-তে যোগ করুন
+{
+  id: &#x27;weather&#x27;,
+  name: &#x27;ওয়েদার বট&#x27;,
+  icon: &#x27;bi-cloud-sun&#x27;,
+  description: &#x27;শহরের নাম দিলে আবহাওয়া দেখায়।&#x27;,
+  category: &#x27;ব্যবসা&#x27;,
+  code: `module.exports = async function(update, api) {
+  const text = (update.message?.text || &#x27;&#x27;).trim();
+  const chatId = update.message?.chat?.id;
+
+  if (text === &#x27;/start&#x27;) {
+    await api.sendMessage(chatId,
+      &#x27;ওয়েদার বট!
+&#x27; +
+      &#x27;শহরের নাম লিখুন, আবহাওয়া জানাবো।&#x27;
+    );
+    return;
+  }
+
+  // শহরের নাম পেলে আবহাওয়া দেখান
+  await api.sendMessage(chatId, text + &#x27; শহরের আবহাওয়া লোড হচ্ছে...&#x27;);
+  // TODO: API call যোগ করুন
+};`
+}</code></pre></div></div></section></main></div></div><!--$--><!--/$--><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><script src="/_next/static/chunks/1inwntv0b4r-7.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[27423,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"ThemeProvider\"]\n3:I[39756,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"default\"]\n4:I[37457,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"default\"]\n5:I[77855,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"Toaster\"]\n6:I[47257,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"ClientPageRoot\"]\n7:I[37974,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\",\"/_next/static/chunks/2h7qcsmqb6rns.js\"],\"default\"]\na:I[97367,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"OutletBoundary\"]\nb:\"$Sreact.suspense\"\ne:I[97367,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"ViewportBoundary\"]\n10:I[97367,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"MetadataBoundary\"]\n12:I[68027,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/05gm1tsxrfvvf.css\",\"style\"]\n:HL[\"/_next/static/media/fcdafff93183a575-s.p.0ab1x-y9kciz7.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css\",\"style\"]\nd:X\n0:{\"P\":null,\"c\":[\"\",\"docs\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"docs\",{\"children\":[\"__PAGE__\",{},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4624],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/05gm1tsxrfvvf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/344tyobn3y0m9.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0v5nveuqzw23-.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"bn\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"rel\":\"stylesheet\",\"href\":\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css\"}]}],[\"$\",\"body\",null,{\"className\":\"noto_serif_bengali_4cfda81d-module__YYSBCW__variable antialiased bg-background text-foreground\",\"children\":[[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"$L5\",null,{}]]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L6\",null,{\"Component\":\"$7\",\"serverProvidedParams\":{\"searchParams\":{},\"params\":{},\"promises\":[\"$@8\",\"$@9\"]}}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/2h7qcsmqb6rns.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$La\",null,{\"children\":[\"$\",\"$b\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@c\"}]}]]}],{},null,false,null]},null,false,\"$d\"]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$Le\",null,{\"children\":\"$Lf\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L10\",null,{\"children\":[\"$\",\"$b\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L11\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$12\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/05gm1tsxrfvvf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]]],\"S\":true,\"h\":null,\"r\":\"$undefined\",\"s\":\"$undefined\",\"a\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"p2QTM4fD0QjWnU80pzke0\"}\nd:C\n8:{}\n9:\"$0:f:0:1:1:children:1:children:0:props:children:0:props:serverProvidedParams:params\"\nf:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n13:I[27201,[\"/_next/static/chunks/344tyobn3y0m9.js\",\"/_next/static/chunks/0v5nveuqzw23-.js\"],\"IconMark\"]\nc:null\n11:[[\"$\",\"title\",\"0\",{\"children\":\"BotForge - টেলিগ্রাম বট হোস্টিং প্ল্যাটফর্ম\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Cloudflare Pages-এ সম্পূর্ণ ফ্রিতে আপনার Telegram বট হোস্ট করুন। কোনো সার্ভার লাগবে না, কোনো ডাটাবেস লাগবে না। আনলিমিটেড বট, আনলিমিটেড রিকোয়েস্ট, চিরকাল ফ্রি।\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"Telegram Bot,Bot Hosting,Cloudflare Pages,Free Bot Hosting,Serverless,টেলিগ্রাম বট,ফ্রি বট হোস্টিং,বট তৈরি\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'\u003e\u003ctext y='.9em' font-size='90'\u003e🤖\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L13\",\"4\",{}]]\n"])</script></body></html>
